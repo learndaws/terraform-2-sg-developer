@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow-specific" {
+resource "aws_security_group" "allow_specific" {
   name        = var.sg_name
   description = var.description
   vpc_id      = var.vpc_id
