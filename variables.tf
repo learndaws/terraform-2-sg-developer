@@ -11,9 +11,14 @@ variable "vpc_id" {
 }
 
 variable "common_tags" {
-
+    type = map
+    default = {
+        Project = "Roboshop"
+        Environment = "Dev"
+        Terraform = "True"
+    }
 }
 
 variable "sg_function_tags" {
-    
+
 }
